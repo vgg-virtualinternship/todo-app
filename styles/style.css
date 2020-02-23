@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins|Trade+Winds&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,19 +6,172 @@
           box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  width: 100%;
+  background-color: #218139;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 header {
   height: 200px;
-  background-color: purple;
+  background-color: #2ba84a;
+  color: #040f0f;
+  font-family: "Trade Winds";
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+header .clear {
+  position: absolute;
+  top: 100px;
+  right: 15px;
+}
+
+header #date {
+  position: absolute;
+  left: 70px;
+  bottom: 0;
+  text-align: center;
 }
 
 .container {
   position: relative;
   height: 100vh;
+  width: 100%;
+}
+
+.squeeze {
+  padding: 0px 15px;
+}
+
+.content {
+  font-family: "Poppins";
+  height: 100%;
+  overflow-y: auto;
+  background-color: #040f0f;
+}
+
+.content ul {
+  padding-top: 25px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content ul .item {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #2ba84a;
+  padding: 12px 15px;
+  border-radius: 100px;
+  color: #fcfffc;
+  width: 100%;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+i {
+  color: #040f0f;
+  -webkit-transition: 100ms linear;
+  transition: 100ms linear;
+  cursor: pointer;
+}
+
+i:hover {
+  color: #fcfffc;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .add-to-do {
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
   bottom: 0;
   left: 0;
+  width: 100%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-color: #fcfffc;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.add-to-do input {
+  width: 80%;
+  font-family: "Poppins";
+  font-size: 15px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #fcfffc;
+  color: #040f0f;
+  -webkit-transition: background-color 350ms ease-in-out;
+  transition: background-color 350ms ease-in-out;
+}
+
+.add-to-do input:hover {
+  color: #2ba84a;
+}
+
+.add-to-do input:focus {
+  color: #2ba84a;
+}
+
+@media screen and (min-width: 540px) {
+  .container {
+    position: relative;
+    top: 30px;
+    width: 60%;
+    height: 50vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: 9px 14px 13px -18px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 14px 13px -18px rgba(0, 0, 0, 0.75);
+  }
+  .add-to-do {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

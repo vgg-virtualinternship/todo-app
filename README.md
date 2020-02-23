@@ -4,4 +4,4 @@
 # You can also tag Todos as done by clicking on the outlined circle
 # Or uncheck a Todo by clicking on the crossed out Todo
 
-##### I do hope you enjoy navigating the app, thanks for reviewing my code, leave a star if you like this mini app #########
+##### I do hope you enjoy navigating the app, and learn something new, leave a star if you like this mini app #########
