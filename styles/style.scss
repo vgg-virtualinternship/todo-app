@@ -123,8 +123,7 @@ i {
     width: 80%;
     font-family: $main-font;
     font-size: 15px;
-    padding: 10px 15px;
-    
+    padding: 10px 15px;  
     border: none;
     background-color: $tertiary-color;
     color: $primary-color;
@@ -133,9 +132,17 @@ i {
       color: $secondary-color
     }
     &:focus {
-      
+      outline: 0;
       color: $secondary-color;
     }
+  }
+
+  i {
+    font-size: 19px;
+  }
+  
+  i:hover {
+    color: $dark-secondary-color;
   }
  
 }

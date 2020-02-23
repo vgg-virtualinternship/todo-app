@@ -153,7 +153,16 @@ i:hover {
 }
 
 .add-to-do input:focus {
+  outline: 0;
   color: #2ba84a;
+}
+
+.add-to-do i {
+  font-size: 19px;
+}
+
+.add-to-do i:hover {
+  color: #218139;
 }
 
 @media screen and (min-width: 540px) {
